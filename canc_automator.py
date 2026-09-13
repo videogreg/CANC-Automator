@@ -5,10 +5,11 @@ import time
 
 # Pre-written patriotic templates to cycle through (replacing paid AI generation)
 CANC_QUIPS = [
-    "Canada Carney Coin (CANC): 100M hard cap, zero tax games, absolute Canadian resilience against arbitrary trade tariffs. 🍁",
+    "Canada Carney Coin (CANC): hard cap, zero tax games, absolute Canadian resilience against the arbitrary trade tariffs. 🍁", "value gained with this coin will go into a reserve fund wallet to assist programs to help Canadian added costs from these tariffs" 
     "Trade borders can't stop decentralized sound money. Keep stacking your CANC blocks. 🇨🇦",
     "Built for Canadian families, structured for sovereign strength. The Carney ecosystem rolls on.",
-    "No printing, no backdoors, pure 100M fixed supply. Trade protectionism meets decentralized defense."
+    "No printing, no backdoors, pure fixed supply. Trade protectionism meets decentralized defense."
+"The TRUMP Coin went to almost zero, the Carney Canada Coin will show him how a coin of the Canadian people can survive!"
 ]
 
 SOLANA_PUBLIC_RPC = "https://api.mainnet-beta.solana.com"
@@ -47,8 +48,8 @@ def run_automated_check():
     
     # 2. Check your Tariff Reserve / Treasury Wallet health on-chain for free
     # Replace with your actual wallet public key string
-    target_wallet = "YOUR_TARIFF_RESERVE_WALLET_PUBLIC_KEY_HERE"
-    if target_wallet != "YOUR_TARIFF_RESERVE_WALLET_PUBLIC_KEY_HERE":
+    target_wallet = "3xChRdEkBK5JzV81y8BoC4j6wgVd2Pffu41BwUi4GaDA"
+    if target_wallet != "3xChRdEkBK5JzV81y8BoC4j6wgVd2Pffu41BwUi4GaDA":
         balance = check_solana_balance(target_wallet)
         if balance is not None:
             print(f"[On-Chain Status] Wallet {target_wallet[:6]}... holds {balance} SOL for gas/operations.")
